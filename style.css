@@ -1,0 +1,98 @@
+body{
+    text-align: center;
+    background-color: green;
+    color:white;
+    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+    display:flex;
+    margin:20px;
+}
+
+button{
+    border-radius: 10px 10px 10px 10px;
+    margin:5px;
+}
+
+button:hover{
+    background-color: rgb(179, 171, 171);
+}
+
+#bet_amount{
+    border-radius: 10px 10px 10px 10px;
+    margin:5px;
+}
+
+#send_bet{
+    border-radius: 10px 10px 10px 10px;
+    margin:5px;
+}
+
+#send_bet:hover{
+    background-color: rgb(179, 171, 171);
+}
+
+.card_field{
+    width:800px;
+}
+
+#dealer_cards{
+    height:160px;
+}
+
+#player_cards{
+    height:160px;
+}
+
+.another{
+    margin:50px;
+    height:600px;
+    overflow: auto;
+}
+
+.another #table_field{
+    background-color: rgb(150, 235, 85);
+    border-collapse: collapse;
+    color: black;
+    width:500px;
+    text-align: center;
+}
+
+.another #table_field ,td ,th{
+    border: 1px solid black;
+    padding:5px;
+}
+
+.another #table_field .odd_row{
+    background-color: white;
+}
+
+.another #table_field .even_row{
+    background-color: yellow;
+}
+
+img{
+    width:100px;
+    height:145px;
+    margin:5px;
+}
+
+.split_table{
+    color:red;
+}
+
+#now_status{
+    /*background-color: rgb(226, 167, 233);*/
+    background-color: rgb(150, 235, 85);
+    color: black;
+    margin: 20px;
+    text-align: center;
+    width:800px;
+    border-collapse: collapse;
+}
+
+#now_status td{
+    background-color: white;
+}
+
+#now_status #result{
+    background-color:yellow;
+}

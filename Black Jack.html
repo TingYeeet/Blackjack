@@ -1,0 +1,77 @@
+<!--
+4109056005 林庭毅 第6次作業12/18
+4109056005 TingYi Lin The Sixth Homework 12/18
+-->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./game control.js"></script>
+</head>
+
+<body>
+    <div class="card_field">
+        <h3>莊家:</h3>
+        <div id="dealer_cards">
+        </div>
+        <!--<p>暗牌:  <span id="hide"></span></p>-->
+
+        <h3>玩家:</h3>
+        <div id="player_cards"></div>
+        <input id = "bet_amount" type = "number"></label>
+        <input id = "send_bet" type = "button" value = "下注">
+        <button id="cheat">莊家作弊模式</button>
+
+        <br>
+        <button id="hit">要牌</button>
+        <button id="stand">停牌</button>
+
+        <button id="split_hit_main">要牌</button>
+        <button id="split_stand_main">停牌</button>
+
+        <button id="double">雙倍下注</button>
+        <button id="split">分牌</button>
+        <button id="surrender">認輸</button>
+        <button id="next_game">下一局</button>
+
+        <span id="split_field">
+            <h3>分牌:</h3>
+            <div id="split_cards"></div>
+            <button id="split_hit">要牌</button>
+            <button id="split_stand">停牌</button>
+        </span>
+
+        <table id="now_status">
+            <tr>
+                <th>牌堆剩餘張數</th>
+                <th>玩家目前點數</th>
+                <th>下注金額</th>
+                <th>持有賭金</th>
+            </tr>
+            <tr>
+                <td id="remain_card"></td>
+                <td id="player_now_point" ></td>
+                <td id="bet_on"></td>
+                <td id="have_bet">持有賭金</td>
+            </tr>
+            <tr>
+                <td id="result" colspan="4"></td>
+            </tr>
+        </table>
+
+        <!--<p id="remain_tag">牌堆剩餘張數:  <span id="remain_card"></span></p>
+        <p id="display_player_point">玩家目前點數:  <span id="player_now_point"></span></p>
+        <p>持有賭金:  <span id="have_bet"></span></p>
+        <p id="result"></p>-->
+    </div>
+    <span class="another">
+        <table id="table_field"></table>
+    </span>
+</body>
+
+</html>
